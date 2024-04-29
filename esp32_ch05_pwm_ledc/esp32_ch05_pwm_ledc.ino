@@ -20,9 +20,11 @@ void led_pwm_ledc() {
 }
 
 void setup() {
+  Serial.begin(9600);
   led_init();
 }
 
 void loop() {
- led_pwm_ledc();
+  Serial.print("hello pwm ledc");
+  led_pwm_ledc();
 }
